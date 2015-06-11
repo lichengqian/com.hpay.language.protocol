@@ -171,7 +171,11 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
+      <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
+        <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
+      </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
@@ -334,6 +338,9 @@
   <node concept="bUwia" id="QD68sERaL2">
     <property role="TrG5h" value="main" />
     <property role="3GE5qa" value="dict" />
+    <node concept="aNPBN" id="2DEc7Dbh3cy" role="aQYdv">
+      <ref role="aOQi4" to="4seb:QD68sERb54" resolve="Protocol" />
+    </node>
     <node concept="2rT7sh" id="5cS$ztbdXon" role="2rTMjI">
       <property role="TrG5h" value="Service_Interface" />
       <ref role="2rTdP9" to="4seb:QD68sERb54" resolve="Protocol" />
@@ -341,7 +348,7 @@
     </node>
     <node concept="2rT7sh" id="5cS$ztbdXC7" role="2rTMjI">
       <property role="TrG5h" value="Service_Method" />
-      <ref role="2rTdP9" to="4seb:QD68sERnDG" resolve="Entry" />
+      <ref role="2rTdP9" to="4seb:QD68sERnDG" resolve="Endpoint" />
       <ref role="2rZz_L" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
     </node>
     <node concept="2rT7sh" id="7jUMyM99UTT" role="2rTMjI">
@@ -443,6 +450,21 @@
       <ref role="3lhOvi" node="7jUMyM8LuC6" resolve="ProtocolFields" />
       <ref role="2sgKRv" node="7jUMyM99UTT" resolve="Protocol_Fields" />
       <ref role="30HIoZ" to="4seb:7jUMyM8XIw6" resolve="IDict" />
+      <node concept="30G5F_" id="2DEc7DbfhxL" role="30HLyM">
+        <node concept="3clFbS" id="2DEc7DbfhxM" role="2VODD2">
+          <node concept="3clFbF" id="2DEc7DbfhAK" role="3cqZAp">
+            <node concept="2OqwBi" id="2DEc7Dbfj4r" role="3clFbG">
+              <node concept="2OqwBi" id="2DEc7DbfhFs" role="2Oq$k0">
+                <node concept="30H73N" id="2DEc7DbfhAJ" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="2DEc7Dbfi5J" role="2OqNvi">
+                  <ref role="3TtcxE" to="4seb:7jUMyM8XIwd" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="2DEc7DbfmfO" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3lhOvk" id="7jUMyM8X8Yk" role="3lj3bC">
       <property role="36QftV" value="true" />
