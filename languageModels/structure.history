@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="4seb" modelUID="r:b42d7bf1-b0bc-4b41-baeb-cac322e31db0(com.hpay.language.protocol.structure)" version="-1" />
+    </dependencies>
+    <rename id="4seb.984344962375975585" type="CONCEPT" from="Field" to="FieldDef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4seb" modelUID="r:b42d7bf1-b0bc-4b41-baeb-cac322e31db0(com.hpay.language.protocol.structure)" version="0" />
+    </dependencies>
+    <rename id="4seb.984344962376180917" type="PROPERTY" from="optional" to="required" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4seb" modelUID="r:b42d7bf1-b0bc-4b41-baeb-cac322e31db0(com.hpay.language.protocol.structure)" version="1" />
+    </dependencies>
+    <rename id="4seb.984344962376184999" type="CONCEPT" from="Tag" to="TagDef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4seb" modelUID="r:b42d7bf1-b0bc-4b41-baeb-cac322e31db0(com.hpay.language.protocol.structure)" version="2" />
+    </dependencies>
+    <rename id="4seb.984344962376187733" type="CONCEPT" from="TagReference" to="TagRef" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4seb" modelUID="r:b42d7bf1-b0bc-4b41-baeb-cac322e31db0(com.hpay.language.protocol.structure)" version="3" />
+    </dependencies>
+    <rename id="4seb.984344962375973484" type="CONCEPT" from="Method" to="Entry" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4seb" modelUID="r:b42d7bf1-b0bc-4b41-baeb-cac322e31db0(com.hpay.language.protocol.structure)" version="4" />
+    </dependencies>
+    <rename id="4seb.984344962376190714" type="CHILD" from="methods" to="entries" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="4seb" modelUID="r:b42d7bf1-b0bc-4b41-baeb-cac322e31db0(com.hpay.language.protocol.structure)" version="5" />
+    </dependencies>
+    <rename id="4seb.2700962768566626451" type="PROPERTY" from="fixLength" to="maxLength" />
+  </StructureModification>
+</history>
+
