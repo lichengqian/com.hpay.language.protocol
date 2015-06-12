@@ -12,6 +12,15 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
@@ -73,11 +82,19 @@
     <property role="TrG5h" value="Request" />
     <property role="3GE5qa" value="protocol" />
     <ref role="1TJDcQ" node="2rXt6_kbmjA" resolve="FieldContainer" />
+    <node concept="1TJgyi" id="4uUgwIn62kW" role="1TKVEl">
+      <property role="TrG5h" value="format" />
+      <ref role="AX2Wp" node="4uUgwIn5WFj" resolve="DataFormat" />
+    </node>
   </node>
   <node concept="1TIwiD" id="QD68sERnDB">
     <property role="TrG5h" value="Response" />
     <property role="3GE5qa" value="protocol" />
     <ref role="1TJDcQ" node="2rXt6_kbmjA" resolve="FieldContainer" />
+    <node concept="1TJgyi" id="4uUgwIn6dKK" role="1TKVEl">
+      <property role="TrG5h" value="format" />
+      <ref role="AX2Wp" node="4uUgwIn5WFj" resolve="DataFormat" />
+    </node>
   </node>
   <node concept="1TIwiD" id="QD68sERnDG">
     <property role="TrG5h" value="Endpoint" />
@@ -283,6 +300,24 @@
       <property role="20kJfa" value="constraints" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="QD68sESbhY" resolve="Constraint" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="4uUgwIn5WFj">
+    <property role="3GE5qa" value="protocol" />
+    <property role="TrG5h" value="DataFormat" />
+    <property role="PDuV0" value="false" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="4uUgwIn6dLD" role="M5hS2">
+      <property role="1uS6qo" value="NullFormat" />
+      <property role="1uS6qv" value="NullFormat" />
+    </node>
+    <node concept="M4N5e" id="4uUgwIn5WFk" role="M5hS2">
+      <property role="1uS6qv" value="LuaTable" />
+      <property role="1uS6qo" value="LuaTable" />
+    </node>
+    <node concept="M4N5e" id="4uUgwIn6205" role="M5hS2">
+      <property role="1uS6qo" value="JSON" />
+      <property role="1uS6qv" value="JSON" />
     </node>
   </node>
 </model>
