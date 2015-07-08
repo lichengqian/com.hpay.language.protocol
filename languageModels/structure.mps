@@ -82,19 +82,11 @@
     <property role="TrG5h" value="Request" />
     <property role="3GE5qa" value="protocol" />
     <ref role="1TJDcQ" node="2rXt6_kbmjA" resolve="FieldContainer" />
-    <node concept="1TJgyi" id="4uUgwIn62kW" role="1TKVEl">
-      <property role="TrG5h" value="format" />
-      <ref role="AX2Wp" node="4uUgwIn5WFj" resolve="DataFormat" />
-    </node>
   </node>
   <node concept="1TIwiD" id="QD68sERnDB">
     <property role="TrG5h" value="Response" />
     <property role="3GE5qa" value="protocol" />
     <ref role="1TJDcQ" node="2rXt6_kbmjA" resolve="FieldContainer" />
-    <node concept="1TJgyi" id="4uUgwIn6dKK" role="1TKVEl">
-      <property role="TrG5h" value="format" />
-      <ref role="AX2Wp" node="4uUgwIn5WFj" resolve="DataFormat" />
-    </node>
   </node>
   <node concept="1TIwiD" id="QD68sERnDG">
     <property role="TrG5h" value="Endpoint" />
@@ -203,6 +195,10 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5dgAdzVMHn3" role="1TKVEl">
+      <property role="TrG5h" value="format" />
+      <ref role="AX2Wp" node="4uUgwIn5WFj" resolve="DataFormat" />
+    </node>
     <node concept="1TJgyj" id="2rXt6_kbmjH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fields" />
